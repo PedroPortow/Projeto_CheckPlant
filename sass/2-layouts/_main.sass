@@ -1,0 +1,23 @@
+@use '../1-base/_variables'
+@use 'mixins'
+
+#main
+    background: variables.$bg-color
+    height: fit-content
+    padding: 40px 16px
+    display: flex
+    justify-content: center //será q ta certo? hmm n sei
+    align-items: center //??
+
+    @include mixins.mobile-mini
+        padding-bottom: 24px
+
+    &-wrapper
+        display: flex
+        flex-direction: row
+        // border: 1px solid red
+        gap: 24px
+        width: fit-content
+
+        @include mixins.mobile-mini
+            flex-direction: column
