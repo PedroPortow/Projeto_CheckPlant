@@ -128,7 +128,6 @@ header .textWrapper i {
 .aside-container .second-section .second-coluna {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   justify-content: flex-start;
   gap: 16px;
 }
@@ -274,7 +273,7 @@ header .textWrapper i {
   margin-bottom: 16px;
 }
 .container-100w-first-section {
-  width: 100%;
+  width: 472px;
   border-right: 1px solid #E7E8EF;
   padding: 16px;
 }
