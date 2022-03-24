@@ -37,7 +37,7 @@
         display: flex
         flex-direction: column
 
-        &-first-row
+        .first-row
             display: flex
             flex-direction: row
             justify-content: space-between
@@ -45,39 +45,53 @@
             justify-content: flex-start
             gap: 32px
 
-            &-col1, &-col2
+            .col1, .col2
                 display: flex
                 flex-direction: column
                 // border: 1px solid red
                 width: fit-content
 
-        &-second-row
+        .second-coluna
             display: flex
-            flex-direction: row
+            flex-direction: column
             justify-content: space-between
-            margin-bottom: 16px
+
             justify-content: flex-start
             gap: 16px
 
-            &-col1, &-col2
-                display: flex
-                flex-direction: column
-                // border: 1px solid red
-                width: fit-content
+            @include mixins.mobile-mini
+                flex-direction: row
 
-            &-col2
-                span
-                    background: #F5F6FA
-                    border: 1px solid #DFE0E7
-                    border-radius: 50%
+            &-row
+                display: flex
+                flex-direction: row
+                gap: 16px
+
+                .JH
                     display: flex
-                    justify-content: center
-                    align-items: center
-                    color: variables.$icons-color
-                    height: 32px
-                    width: 32px
+                    flex-direction: column
+                    // border: 1px solid red
+                    width: fit-content
+
+                    span
+                        background: #F5F6FA
+                        border: 1px solid #DFE0E7
+                        border-radius: 50%
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        color: variables.$icons-color
+                        height: 32px
+                        width: 32px
+
+                .textWrapper
+                    display: flex
+                    flex-direction: column
 
         &-third-row
+            display: flex
+            flex-direction: column
+
             h2
                 i
                     color: #1754C4

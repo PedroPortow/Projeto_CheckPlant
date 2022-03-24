@@ -112,7 +112,7 @@ header .textWrapper i {
   display: flex;
   flex-direction: column;
 }
-.aside-container .second-section-first-row {
+.aside-container .second-section .first-row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -120,25 +120,34 @@ header .textWrapper i {
   justify-content: flex-start;
   gap: 32px;
 }
-.aside-container .second-section-first-row-col1, .aside-container .second-section-first-row-col2 {
+.aside-container .second-section .first-row .col1, .aside-container .second-section .first-row .col2 {
   display: flex;
   flex-direction: column;
   width: fit-content;
 }
-.aside-container .second-section-second-row {
+.aside-container .second-section .second-coluna {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 16px;
   justify-content: flex-start;
   gap: 16px;
 }
-.aside-container .second-section-second-row-col1, .aside-container .second-section-second-row-col2 {
+@media (max-width: 425px) {
+  .aside-container .second-section .second-coluna {
+    flex-direction: row;
+  }
+}
+.aside-container .second-section .second-coluna-row {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.aside-container .second-section .second-coluna-row .JH {
   display: flex;
   flex-direction: column;
   width: fit-content;
 }
-.aside-container .second-section-second-row-col2 span {
+.aside-container .second-section .second-coluna-row .JH span {
   background: #F5F6FA;
   border: 1px solid #DFE0E7;
   border-radius: 50%;
@@ -148,6 +157,14 @@ header .textWrapper i {
   color: #798AA4;
   height: 32px;
   width: 32px;
+}
+.aside-container .second-section .second-coluna-row .textWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.aside-container .second-section-third-row {
+  display: flex;
+  flex-direction: column;
 }
 .aside-container .second-section-third-row h2 i {
   color: #1754C4;
