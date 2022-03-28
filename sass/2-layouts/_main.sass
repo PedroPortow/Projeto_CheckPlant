@@ -3,11 +3,12 @@
 
 #main
     background: variables.$bg-color
-    height: 100vh
+
     padding: 40px 16px
     display: flex
-    justify-content: center //será q ta certo? hmm n sei
-    align-items: center //??
+    justify-content: center
+    align-items: center
+    flex: 1
 
     @include mixins.mobile-mini
         padding-bottom: 24px
@@ -17,7 +18,6 @@
         flex-direction: row
         // border: 1px solid red
         gap: 24px
-        width: fit-content
 
         @include mixins.mobile-mini
             flex-direction: column

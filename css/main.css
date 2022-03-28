@@ -1,5 +1,7 @@
-html {
+html, body {
   font-size: 16px;
+  width: 100%;
+  height: 100%;
 }
 
 * {
@@ -49,11 +51,11 @@ header .textWrapper i {
 
 #main {
   background: #F5F6FA;
-  height: 100vh;
   padding: 40px 16px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 1;
 }
 @media (max-width: 425px) {
   #main {
@@ -64,7 +66,6 @@ header .textWrapper i {
   display: flex;
   flex-direction: row;
   gap: 24px;
-  width: fit-content;
 }
 @media (max-width: 425px) {
   #main-wrapper {
