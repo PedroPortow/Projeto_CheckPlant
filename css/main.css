@@ -56,6 +56,7 @@ header .textWrapper i {
   justify-content: center;
   align-items: center;
   flex: 1;
+  min-height: 90vh;
 }
 @media (max-width: 425px) {
   #main {
