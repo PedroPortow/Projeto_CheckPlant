@@ -49,7 +49,7 @@ header .textWrapper i {
 
 #main {
   background: #F5F6FA;
-  height: fit-content;
+  height: 100vh;
   padding: 40px 16px;
   display: flex;
   justify-content: center;
